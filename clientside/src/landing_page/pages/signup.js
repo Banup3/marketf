@@ -33,9 +33,6 @@ function Signup() {
           <input type="password" className="form-control" name="password" onChange={handleChange} required />
         </div>
         <button type="submit" className="btn btn-success w-100">Sign Up</button>
-        <p className="mt-3 text-center">
-          Already have an account? <a href="/login">Login</a>
-        </p>
       </form>
     </div>
   );
