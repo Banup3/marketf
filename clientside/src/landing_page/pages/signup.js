@@ -9,7 +9,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', form);
+      await axios.post('https://marketf.onrender.com/api/auth/signup', form);
       alert('User registered!');
     } catch (err) {
       alert(err.response?.data?.msg || 'Signup error');

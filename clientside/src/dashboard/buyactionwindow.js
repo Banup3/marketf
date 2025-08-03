@@ -16,7 +16,7 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = async () => {
     try {
-      await axios.post("http://localhost:3002/neworder", {
+      await axios.post("https://marketf.onrender.com/neworder", {
         name: uid,
         qty: Number(stockQuantity),
         price: Number(stockPrice),

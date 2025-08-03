@@ -8,7 +8,7 @@ const  Holdings=()=> {
 
   const [allHoldings,setallHoldings]=useState([]);
   useEffect(() => {
-  axios.get("http://localhost:5000/allholdings")
+  axios.get("https://marketf.onrender.com/allholdings")
     .then((res) => {
       console.log("Holdings fetched:", res.data); // ✅ Check this
       setallHoldings(res.data);

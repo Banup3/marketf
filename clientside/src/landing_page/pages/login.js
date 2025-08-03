@@ -11,7 +11,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
+      const res = await axios.post('https://marketf.onrender.com/api/auth/login', form);
       alert(`Welcome ${res.data.user.username}`);
       navigate('/dashboard');
       // You can store token in localStorage or redirect here

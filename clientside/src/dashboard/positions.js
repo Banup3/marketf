@@ -6,7 +6,7 @@ import axios from 'axios';
 const Positions=()=> {
   const [allPositions,setallPositions]=useState([]);
     useEffect(()=>{
-     axios.get("http://localhost:5000/allpositions").then((res)=>{
+     axios.get("https://marketf.onrender.com/allpositions").then((res)=>{
       setallPositions(res.data)
      })
     },[]);
